@@ -88,7 +88,7 @@ export class App extends Component {
                         cell === ''
                           ? 'flag'
                           : cell === 'F'
-                          ? 'revealed'
+                          ? 'shown'
                           : cell === '_'
                           ? 'flagbomb'
                           : cell === '@'
