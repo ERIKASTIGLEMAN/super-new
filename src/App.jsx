@@ -29,8 +29,8 @@ export class App extends Component {
     this.setState(game)
   }
 
-  clickCellHandler = () => {
-    console.log('i clicked')
+  clickCellHandler = (rowIndex, colIndex) => {
+    console.log(`i clicked ${rowIndex} ${colIndex}`)
   }
   // clickCellHandler = async (rowIndex, colIndex) => {
   //   const body = { row: rowIndex, col: colIndex }
@@ -81,7 +81,10 @@ export class App extends Component {
               {this.state.board.map((row, rowIndex) => {
                 return row.map((cell, colIndex) => {
                   return (
-                    <li key={colIndex} onClick={this.clickCellHandler}>
+                    <li
+                      key={colIndex}
+                      onClick={() => this.clickCellHandler(rowIndex, colIndex)}
+                    >
                       {cell}
                     </li>
                   )
