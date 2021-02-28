@@ -29,25 +29,21 @@ export class App extends Component {
     this.setState(game)
   }
 
-  clickCellHandler = (rowIndex, colIndex) => {
-    console.log(`i clicked ${rowIndex} ${colIndex}`)
+  clickCellHandler = async (rowIndex, colIndex) => {
+    const body = { row: rowIndex, col: colIndex }
+
+    const response = await fetch(
+      `https://minesweeper-api.herokuapp.com/games/${this.state.id}/check`,
+      {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(body),
+      }
+    )
+    const game = await response.json()
+
+    this.setState(game)
   }
-  // clickCellHandler = async (rowIndex, colIndex) => {
-  //   const body = { row: rowIndex, col: colIndex }
-
-  //   const response = await fetch(
-  //     `https://minesweeper-api.herokuapp.com/games/${this.state.id}/check`,
-  //     {
-  //       method: 'POST',
-  //       headers: { 'content-type': 'application/json' },
-  //       body: JSON.stringify(body),
-  //     }
-  //   )
-
-  //   const game = await response.json()
-
-  //   this.setState(game)
-  // }
 
   // rtClickHandler = async (event, rowIndex, colIndex) => {
   //   event.preventDefault()
