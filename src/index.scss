@@ -28,7 +28,6 @@ ul {
   width: calc(100vh - 10 * var(--header-font-size));
   display: grid;
   grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  background-color: rgb(132, 88, 160);
 }
 
 ul,
@@ -42,10 +41,48 @@ li {
 
 li {
   margin: 0;
-  padding: 0.5;
+  // padding: 0.5;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 800;
   font-size: x-large;
+  background-color: rgb(132, 88, 160);
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+
+button {
+  display: flex;
+  align-content: center;
+  margin: auto;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+}
+.revealed {
+  background-color: #cea9ee;
+}
+
+.flagbomb {
+  background-image: url('https://lh3.googleusercontent.com/proxy/yeFjuPKICcsW7dodb2gXV9PvNtwCOEuGi50TaDPaFVPuE8dbPJhHARg2nHPrYRAw3YPEx2X5ZCNNWaCmg5GlIVIC3x9zCCz4UHjCB18VomssoWNVaZq4SQ');
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
+.bomb {
+  background-image: url('https://lh3.googleusercontent.com/proxy/yeFjuPKICcsW7dodb2gXV9PvNtwCOEuGi50TaDPaFVPuE8dbPJhHARg2nHPrYRAw3YPEx2X5ZCNNWaCmg5GlIVIC3x9zCCz4UHjCB18VomssoWNVaZq4SQ');
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
+
+.flag {
+  background-image: url('https://ofcode.com.br/projects/minesweeper/assets/emojis/triangular-flag-on-post.png');
+  background-repeat: no-repeat;
+  background-size: 20px;
 }
