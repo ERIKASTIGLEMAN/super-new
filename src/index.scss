@@ -70,19 +70,26 @@ h3 {
   background-color: #cea9ee;
 }
 
-.flagbomb {
-  background-image: url('https://lh3.googleusercontent.com/proxy/yeFjuPKICcsW7dodb2gXV9PvNtwCOEuGi50TaDPaFVPuE8dbPJhHARg2nHPrYRAw3YPEx2X5ZCNNWaCmg5GlIVIC3x9zCCz4UHjCB18VomssoWNVaZq4SQ');
+.bombflag {
+  background-image: url(bombflag.png);
   background-repeat: no-repeat;
-  background-size: 20px;
+  background-size: 38px;
+  font-size: 0px;
+  justify-content: center;
 }
 .bomb {
-  background-image: url('https://lh3.googleusercontent.com/proxy/yeFjuPKICcsW7dodb2gXV9PvNtwCOEuGi50TaDPaFVPuE8dbPJhHARg2nHPrYRAw3YPEx2X5ZCNNWaCmg5GlIVIC3x9zCCz4UHjCB18VomssoWNVaZq4SQ');
+  background-image: url(bomb.png);
   background-repeat: no-repeat;
-  background-size: 20px;
+  background-size: 38px;
+  justify-content: center;
+
+  font-size: 0px;
 }
 
 .flag {
-  background-image: url('https://ofcode.com.br/projects/minesweeper/assets/emojis/triangular-flag-on-post.png');
+  background-image: url(flag.png);
   background-repeat: no-repeat;
-  background-size: 20px;
+  background-size: 35px;
+  font-size: 0px;
+  padding: 1rem;
 }

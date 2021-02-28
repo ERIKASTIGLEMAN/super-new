@@ -72,7 +72,7 @@ export class App extends Component {
           <h2>Minesweeper Game</h2>
           <h3>Mines: {this.state.mines}</h3>
           <h3>Game #: {this.state.id}</h3>
-          {/* <h3>{this.state.state}</h3> */}
+          <h3>{this.state.state}</h3>
           <section>
             <ul>
               {this.state.board.map((row, rowIndex) => {
@@ -80,7 +80,18 @@ export class App extends Component {
                   return (
                     <li
                       key={colIndex}
-                      onClick={() =>
+                      className={
+                        cell === '_'
+                          ? 'shown'
+                          : cell === 'F'
+                          ? 'flag'
+                          : cell === '*'
+                          ? 'bomb'
+                          : cell === '@'
+                          ? 'bombflag'
+                          : null
+                      }
+                      onClick={(event) =>
                         this.clickCellHandler(event, rowIndex, colIndex)
                       }
                       // onContextMenu = Rt Click
