@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export class App extends Component {
   state = {
     board: [
-      ['f ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+      [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
       [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
       [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
       [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
@@ -14,24 +14,20 @@ export class App extends Component {
     ],
   }
 
-  newGameHandler = () => {
-    console.log('i clicked')
+  newGameHandler = async () => {
+    const body = { difficulty: 0 }
+
+    const apiResponse = await fetch(
+      `https://minesweeper-api.herokuapp.com/games`,
+      {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(body),
+      }
+    )
+    const game = await apiResponse.json()
+    this.setState(game)
   }
-  //   const body = { difficulty: 0 }
-
-  //   const apiResponse = await fetch(
-  //     `https://minesweeper-api.herokuapp.com/games`,
-  //     {
-  //       method: 'POST',
-  //       headers: { 'content-type': 'application/json' },
-  //       body: JSON.stringify(body),
-  //     }
-  //   )
-
-  //   const game = await apiResponse.json()
-
-  //   this.setState(game)
-  // }
 
   // cellClickHandler = async (event, rowIndex, colIndex) => {
   //   event.preventDefault()
@@ -76,9 +72,9 @@ export class App extends Component {
       <div className="gameboard">
         <main>
           <h2>Minesweeper Game</h2>
-          {/* <h3>Mines: {this.state.mines}</h3>
-          <h3>Game #: {this.state.id}</h3> 
-          <h3>{this.state.state}</h3>  */}
+          <h3>Mines: {this.state.mines}</h3>
+          <h3>Game #: {this.state.id}</h3>
+          {/* <h3>{this.state.state}</h3> */}
           <section>
             <ul>
               {this.state.board.map((row, rowIndex) => {
