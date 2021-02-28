@@ -29,7 +29,9 @@ export class App extends Component {
     this.setState(game)
   }
 
-  clickCellHandler = async (rowIndex, colIndex) => {
+  clickCellHandler = async (event, rowIndex, colIndex) => {
+    event.preventDefault()
+
     const body = { row: rowIndex, col: colIndex }
 
     const response = await fetch(
@@ -45,24 +47,23 @@ export class App extends Component {
     this.setState(game)
   }
 
-  // rtClickHandler = async (event, rowIndex, colIndex) => {
-  //   event.preventDefault()
+  rtClickHandler = async (event, rowIndex, colIndex) => {
+    event.preventDefault()
+    const body = { row: rowIndex, col: colIndex }
 
-  //   const body = { row: rowIndex, col: colIndex }
+    const response = await fetch(
+      `https://minesweeper-api.herokuapp.com/games/${this.state.id}/flag`,
+      {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(body),
+      }
+    )
 
-  //   const response = await fetch(
-  //     `https://minesweeper-api.herokuapp.com/games/${this.state.id}/flag`,
-  //     {
-  //       method: 'POST',
-  //       headers: { 'content-type': 'application/json' },
-  //       body: JSON.stringify(body),
-  //     }
-  //   )
+    const game = await response.json()
 
-  //   const game = await response.json()
-
-  //   this.setState(game)
-  // }
+    this.setState(game)
+  }
 
   render() {
     return (
@@ -79,7 +80,13 @@ export class App extends Component {
                   return (
                     <li
                       key={colIndex}
-                      onClick={() => this.clickCellHandler(rowIndex, colIndex)}
+                      onClick={() =>
+                        this.clickCellHandler(event, rowIndex, colIndex)
+                      }
+                      // onContextMenu = Rt Click
+                      onContextMenu={(event) =>
+                        this.rtClickHandler(event, rowIndex, colIndex)
+                      }
                     >
                       {cell}
                     </li>
