@@ -7,11 +7,11 @@
 html {
   width: 100vw;
   height: 100vh;
-  background-color: rgb(217, 120, 230);
+  background-color: #f5f3f7;
+  background-image: url(../src/bombbg1.png);
+  background-image: url(../src/bombbg5.png);
   background-position: center center;
-  background-image: url('../public/images/bombbg1.png');
-  //background-repeat: no-repeat;
-  //background-size: cover;
+  background-repeat: no-repeat;
   //overflow: hidden;
 }
 
