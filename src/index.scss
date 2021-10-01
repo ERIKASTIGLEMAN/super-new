@@ -7,20 +7,19 @@
 html {
   width: 100vw;
   height: 100vh;
-  background-color: #f5f3f7;
-  background-image: url(../src/bombbg1.png);
-  background-image: url(../src/bombbg5.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  //overflow: hidden;
 }
 
 body {
   margin: 3rem;
   min-height: 100%;
+  background-image: url(../src/bombbg2.png), url(../src/bombbg4.png),
+    url(../src/bombbg6.png), url(../src/bombbg5.png);
+  background-position: top 30px left 55px, top 15px left 53rem,
+    top 30rem right 53px, top 30rem left 55px;
+  background-repeat: no-repeat;
 }
 
-h2 {
+#fire {
   color: rgb(133, 29, 133);
   text-align: center;
   font-size: 64px;

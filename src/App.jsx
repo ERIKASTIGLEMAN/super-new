@@ -69,7 +69,7 @@ export class App extends Component {
     return (
       <div className="gameboard">
         <main>
-          <h2>Minesweeper Game</h2>
+          <h2 id="fire">Minesweeper</h2>
           <h3>Mines: {this.state.mines}</h3>
           <h3>Game #: {this.state.id}</h3>
           <h3>{this.state.state}</h3>
