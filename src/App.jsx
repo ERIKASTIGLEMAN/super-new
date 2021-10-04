@@ -70,8 +70,11 @@ export class App extends Component {
       <div className="gameboard">
         <main>
           <h2 id="fire">Minesweeper</h2>
-          <h3>Mines: {this.state.mines}</h3>
-          <h3>Game #: {this.state.id}</h3>
+          <h3>
+            Mines: {this.state.mines} Game #: {this.state.id}
+          </h3>
+
+          <button onClick={this.newGameHandler}>START GAME</button>
           <h3>{this.state.state}</h3>
           <section>
             <ul>
@@ -106,9 +109,7 @@ export class App extends Component {
               })}
             </ul>
           </section>
-          <footer>
-            <button onClick={this.newGameHandler}>NEW GAME</button>
-          </footer>
+          <footer></footer>
         </main>
       </div>
     )
