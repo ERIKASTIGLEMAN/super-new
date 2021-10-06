@@ -72,6 +72,7 @@ button {
 
 h3 {
   display: flex;
+  flex-direction: column;
   background-color: salmon;
   justify-content: center;
 }
