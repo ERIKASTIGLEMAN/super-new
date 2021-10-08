@@ -27,8 +27,8 @@ main {
 }
 
 ul {
-  height: calc(105vh - 5 * var(--header-font-size));
-  width: calc(105vh - 5 * var(--header-font-size));
+  height: calc(90vh - 5 * var(--header-font-size));
+  width: calc(90vh - 5 * var(--header-font-size));
   display: grid;
   grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
