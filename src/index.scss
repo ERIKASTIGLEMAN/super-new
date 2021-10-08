@@ -6,7 +6,6 @@
 
 html {
   width: 100vw;
-  height: 100vh;
 }
 
 body {
@@ -28,8 +27,8 @@ main {
 }
 
 ul {
-  height: calc(120vh - 10 * var(--header-font-size));
-  width: calc(125vh - 10 * var(--header-font-size));
+  height: calc(105vh - 5 * var(--header-font-size));
+  width: calc(105vh - 5 * var(--header-font-size));
   display: grid;
   grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
@@ -169,6 +168,12 @@ h1 {
   left: 10%;
   animation: fall 20s linear infinite;
   animation-delay: -7s;
+}
+
+.leaf div:nth-child(4) {
+  left: 50%;
+  animation: fall 18s linear infinite;
+  animation-delay: -5s;
 }
 
 .leaf div:nth-child(5) {
