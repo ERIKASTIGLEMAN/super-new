@@ -69,10 +69,15 @@ export class App extends Component {
     return (
       <div className="gameboard">
         <main>
-          <h2 id="fire">Minesweeper</h2>
-          <h3>Mines: {this.state.mines} </h3> <h3>Game #: {this.state.id}</h3>
-          <button onClick={this.newGameHandler}>START GAME</button>
+          <h1 id="fire">Minesweeper</h1>
           <h2>Good Luck! {this.state.state}</h2>
+          <button className="pulse" onClick={this.newGameHandler}>
+            START GAME
+          </button>
+
+          <h3>
+            Mines:{this.state.mines} Game#:{this.state.id}
+          </h3>
           <section>
             <ul>
               {this.state.board.map((row, rowIndex) => {

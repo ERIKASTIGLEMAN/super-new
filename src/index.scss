@@ -12,11 +12,7 @@ html {
 body {
   margin: 3rem;
   min-height: 100%;
-  background-image: url(../src/bombbg2.png), url(../src/bombbg4.png),
-    url(../src/bombbg6.png), url(../src/bombbg5.png);
-  background-position: top 30px left 55px, top 15px left 53rem,
-    top 30rem right 53px, top 30rem left 55px;
-  background-repeat: no-repeat;
+  background-color: gray;
 }
 
 #fire {
@@ -32,8 +28,8 @@ main {
 }
 
 ul {
-  height: calc(100vh - 10 * var(--header-font-size));
-  width: calc(100vh - 10 * var(--header-font-size));
+  height: calc(120vh - 10 * var(--header-font-size));
+  width: calc(125vh - 10 * var(--header-font-size));
   display: grid;
   grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
@@ -68,14 +64,39 @@ button {
   display: flex;
   align-content: center;
   margin: auto;
+
+  line-height: 1;
+  -webkit-transition: 0.25;
+  transition: 025s;
+  color: var(--color);
+  border: 2px solid;
+}
+
+button:hover,
+button:focus {
+  border-color: var(--hover);
+  color: rgb(170, 56, 56);
+}
+.pulse {
+  --color:#ef6eae
+  --hover: #ef8f6e
+}
+
+h2 {
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: -2px;
 }
 
 h3 {
-  display: flex;
-  flex-direction: column;
-  background-color: salmon;
-  justify-content: center;
+  text-align: center;
+  word-spacing: 8rem;
 }
+
+h1 {
+  margin-bottom: 1rem;
+}
+
 .shown {
   background-color: #cea9ee;
 }
