@@ -113,6 +113,166 @@ export class App extends Component {
           </section>
           <footer></footer>
         </main>
+        <main>
+          <div className="leaf">
+            <div>
+              {' '}
+              <img
+                src="https://openclipart.org/image/2400px/svg_to_png/183653/cherrybomb.png"
+                height="75px"
+                width="75px"
+              />
+            </div>
+            <div>
+              <img
+                src="http://pngimg.com/uploads/bomb/bomb_PNG26.png"
+                height="75px"
+                width="75px"
+              />
+            </div>
+            <div>
+              {' '}
+              <img
+                src="http://cliparts.co/cliparts/gie/qBd/gieqBd8id.png"
+                height="75px"
+                width="75px"
+              />
+            </div>
+            <div>
+              <img src />
+            </div>
+            <div>
+              {' '}
+              <img
+                src="http://cliparts.co/cliparts/gie/qBd/gieqBd8id.png"
+                height="75px"
+                width="75px"
+              />
+            </div>
+            <div>
+              {' '}
+              <img
+                src="https://webstockreview.net/images/clipart-explosion-gas-bomb-1.png"
+                height="75px"
+                width="75px"
+              />
+            </div>
+            <div>
+              <img
+                src="https://openclipart.org/image/2400px/svg_to_png/183653/cherrybomb.png"
+                height="75px"
+                width="75px"
+              />
+            </div>
+          </div>
+          <div className="leaf leaf1">
+            <div>
+              {' '}
+              <img
+                src="https://openclipart.org/image/2400px/svg_to_png/183653/cherrybomb.png"
+                height="75px"
+                width="75px"
+              />
+            </div>
+            <div>
+              <img
+                src="http://pngimg.com/uploads/bomb/bomb_PNG26.png"
+                height="75px"
+                width="75px"
+              />
+            </div>
+            <div>
+              {' '}
+              <img
+                src="http://pngimg.com/uploads/bomb/bomb_PNG26.png"
+                height="75px"
+                width="75px"
+              />
+            </div>
+            <div>
+              <img src />
+            </div>
+            <div>
+              {' '}
+              <img
+                src="http://cliparts.co/cliparts/gie/qBd/gieqBd8id.png"
+                height="75px"
+                width="75px"
+              />
+            </div>
+            <div>
+              {' '}
+              <img
+                src="http://cliparts.co/cliparts/gie/qBd/gieqBd8id.png"
+                height="75px"
+                width="75px"
+              />
+            </div>
+            <div>
+              <img
+                src="http://pngimg.com/uploads/bomb/bomb_PNG26.png"
+                height="75px"
+                width="75px"
+              />
+            </div>
+          </div>
+
+          <div className="leaf leaf2">
+            <div>
+              {' '}
+              <img
+                src="https://openclipart.org/image/2400px/svg_to_png/183653/cherrybomb.png"
+                height="75px"
+                width="75px"
+              />
+            </div>
+            <div>
+              <img
+                src="http://pngimg.com/uploads/bomb/bomb_PNG26.png"
+                height="75px"
+                width="75px"
+              />
+            </div>
+            <div>
+              {' '}
+              <img
+                src="http://cliparts.co/cliparts/gie/qBd/gieqBd8id.png"
+                height="75px"
+                width="75px"
+              />
+            </div>
+            <div>
+              <img
+                src="https://openclipart.org/image/2400px/svg_to_png/183653/cherrybomb.png"
+                height="75px"
+                width="75px"
+              />
+            </div>
+            <div>
+              {' '}
+              <img
+                src="https://webstockreview.net/images/clipart-explosion-gas-bomb-1.png"
+                height="80px"
+                width="80px"
+              />
+            </div>
+            <div>
+              {' '}
+              <img
+                src="https://webstockreview.net/images/clipart-explosion-gas-bomb-1.png"
+                height="75px"
+                width="75px"
+              />
+            </div>
+            <div>
+              <img
+                src="https://openclipart.org/image/2400px/svg_to_png/183653/cherrybomb.png"
+                height="75px"
+                width="75px"
+              />
+            </div>
+          </div>
+        </main>
       </div>
     )
   }
