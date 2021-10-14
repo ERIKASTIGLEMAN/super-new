@@ -21,6 +21,13 @@ body {
   text-align: center;
   font-size: 64px;
 }
+
+#gameboard {
+  z-index: 3;
+  position: absolute;
+  margin-left: 20rem;
+}
+
 main {
   display: grid;
   justify-content: center;
