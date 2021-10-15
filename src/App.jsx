@@ -68,7 +68,7 @@ export class App extends Component {
   render() {
     return (
       <div className="gameboard">
-        <main>
+        <main id="gameboard">
           <h1 id="fire">Minesweeper</h1>
           <h2>Good Luck! {this.state.state}</h2>
           <button className="pulse" onClick={this.newGameHandler}>
@@ -113,7 +113,10 @@ export class App extends Component {
           </section>
           <footer></footer>
         </main>
-        <main>
+
+        {/*animation*/}
+
+        <main id="animation">
           <div className="leaf">
             <div>
               {' '}
